@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Energycon</title>
+   <!-- Link to External CSS -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Playfair+Display&display=swap" rel="stylesheet">
+   <style>
+    /* General Styles */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #fefef3;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+     }
+     section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 10%;
+        min-height: 100vh;
+        border-bottom: 1px solid #ccc;
+     }
+     
+     
+     /* Navbar */
+     .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #7ca67e;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        z-index: 1000;
+     }
+     .navbar a {
+        text-decoration: none;
+        color: #f6f6f6;
+        background-color: #7ca67e;
+        padding: 10px 30px;
+        font-family: 'Playfair Display', serif;
+        font-size: 18px;
+        border-radius: 30px;
+        transition: transform 0.3s ease;
+     }
+     .navbar a:hover {
+        transform: translateY(-5px);
+     }
+     
+     
+     /* Content Areas */
+     h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 44px;
+        color: #68996a;
+     }
+     h2 {
+        font-family: 'Comfortaa', cursive; /* Changed to Comfortaa */
+        font-size: 24px; /* Updated size to 24px */
+        color: #68996a;
+        font-weight: normal; /* Ensure not bold */
+     }
+     .right-content img {
+        max-width: 800px;
+        height: auto;
+     }
+     
+     
+     /* Shop Section */
+     .shop-boxes {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 30px;
+     }
+     .shop-box {
+        width: 30%;
+        background-color: #7ca67e;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 24px;
+     }
+     
+     
+     /* Exhibition Section */
+     .bars {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+     }
+     .bar {
+        background-color: #7ca67e;
+        color: #f6f6f6;
+        padding: 15px;
+        font-size: 16pt;
+        font-family: 'Comfortaa', cursive; /* Changed to Comfortaa */
+     }
+     
+     
+     /* Let's Talk Section */
+     .centered-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+     }
+     .socials {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+     }
+     .socials button {
+        background-color: #7ca67e;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        font-size: 24px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+     }
+     .socials button:hover {
+        transform: translateY(-5px);
+     }
+     
+     
+     /* Mini Jump Animation */
+     .jump {
+        transform: translateY(-5px);
+        transition: transform 0.3s ease;
+     }
+    </style>
+</head>
+<body>
+     
+     
+
+
+   <!-- Navbar -->
+   <div class="navbar">
+       <a href="#home" class="tab">Home</a>
+       <a href="#about" class="tab">About</a>
+       <a href="#shop" class="tab">Shop</a>
+       <a href="#exhibition" class="tab">Exhibition</a>
+       <a href="#letstalk" class="tab">Let's Talk</a>
+   </div>
+
+
+   <!-- Home Section -->
+   <section id="home">
+       <div class="content-box">
+           <h1>Enerycon</h1>
+           <h2>We are an international research and development group dedicated to finding solutions for the challenges stemming from rising global energy consumption.</h2>
+       </div>
+       <div class="right-content">
+           <img src="front circle png copy.PNG" alt="Energy image">
+       </div>
+   </section>
+
+
+   <!-- About Section -->
+   <section id="about">
+       <div class="content-box">
+           <h1>About Us</h1>
+           <h2>Our products are designed to be energy-efficient, helping you lower your electricity bills. Our offerings include air conditioners, air conditioner vents, refrigerators, and washing machines, all crafted to minimize energy use while maximizing performance.</h2>
+           <h2>At Energycon, we are committed to addressing the challenges associated with increased energy demand through innovative research and product development. Our goal is to pave the way for a more sustainable future.</h2>
+       </div>
+       <div class="right-content">
+           <img src="Group copy.jpg" alt="About us image">
+       </div>
+   </section>
+
+
+   <!-- Shop Section -->
+   <section id="shop">
+       <div class="content-box">
+           <h1>Shop</h1>
+       </div>
+       <div class="content-box">
+           <div class="bars">
+               <div class="bar">Air-con vent</div>
+               <div class="bar">Air-con</div>
+               <div class="bar">Washing machine</div>
+           </div>
+       </div>
+       <div class="shop">
+           <img src="Three product copy.png" alt="shop image" style="width: 1000px; height: auto;">
+           <div class="buttons-container">
+           </div>
+
+
+       </div>
+   </section>
+
+
+   <!-- Exhibition Section -->
+   <section id="exhibition">
+       <div class="content-box">
+           <h1>Exhibition</h1>
+           <div class="bars">
+               <div class="bar">Location 1: 10am - 2pm</div>
+               <div class="bar">Location 2: 12pm - 4pm</div>
+               <div class="bar">Location 3: 1pm - 5pm</div>
+               <div class="bar">Location 4: 3pm - 6pm</div>
+           </div>
+       </div>
+       <div class="right-content">
+           <img src="Exitbhition copy.jpg" alt="Exhibition image">
+       </div>
+   </section>
+
+
+   <!-- Let's Talk Section -->
+   <section id="letstalk">
+       <div class="centered-content">
+           <h1>Let's Talk</h1>
+           <div class="socials">
+               <button>Facebook</button>
+               <button>Instagram</button>
+               <button>Twitter</button>
+           </div>
+       </div>
+   </section>
+
+
+   <!-- JavaScript for Mini Jump Animation on Hover -->
+   <script>
+       document.querySelectorAll('button').forEach(button => {
+           button.addEventListener('mouseover', () => {
+               button.classList.add('jump');
+           });
+           button.addEventListener('mouseout', () => {
+               button.classList.remove('jump');
+           });
+       });
+   </script>
+
+
+</body>
+</html>
